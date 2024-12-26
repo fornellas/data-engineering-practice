@@ -1,7 +1,7 @@
-FROM ubuntu:18.04
+FROM python:3.12.4-bookworm
 
 RUN apt-get update && \
-    apt-get install -y vim software-properties-common python3.8 python3-pip libpq-dev build-essential libssl-dev libffi-dev python3-dev && \
+    apt-get install -y vim software-properties-common python3-pip libpq-dev build-essential libssl-dev libffi-dev python3-dev && \
     apt-get clean
 
 WORKDIR app
